@@ -16,7 +16,7 @@ def create
 
     if @task.save
       flash[:success] = 'メッセージ が正常に投稿されました'
-      redirect_to @message
+      redirect_to @task
     else
       flash.now[:danger] = 'メッセージ が投稿されませんでした'
       render :new
